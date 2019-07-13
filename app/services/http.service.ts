@@ -16,9 +16,7 @@ export class HttpService {
     private constructor() {
         const bytes  = AES.decrypt(MONICA, GUPIT);
         HttpService.url = bytes.toString(enc.Utf8);
-        HttpService.url = "https://dvsalgv.firebaseio.com/";
-        const encrypted = AES.encrypt(HttpService.url, GUPIT);
-        console.log("encrypted:", encrypted);
+        console.log("URL: :", HttpService.url);
     }
 
     showAds(): Promise<string> {

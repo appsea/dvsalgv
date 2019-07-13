@@ -11,7 +11,7 @@ import { setTimeout } from "tns-core-modules/timer";
 import * as frame from "tns-core-modules/ui/frame";
 
 purchase.init([
-    "dvsa.motorcycle.theory.premium"
+    "dvsa.lgv.theory.premium"
 ]);
 
 if (isAndroid) {
