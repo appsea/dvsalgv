@@ -16,7 +16,6 @@ export class HttpService {
     private constructor() {
         const bytes  = AES.decrypt(MONICA, GUPIT);
         HttpService.url = bytes.toString(enc.Utf8);
-        console.log("URL: :", HttpService.url);
     }
 
     showAds(): Promise<string> {
