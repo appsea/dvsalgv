@@ -126,6 +126,7 @@ export function showAnswer(): void {
 }
 
 export function selectOption(args): void {
+    console.log("selectOption....");
     if (!vm.enableSelection()) {
         vm.showAnswer();
         vm.selectOption(args);
