@@ -1,5 +1,3 @@
-export const MONICA = "U2FsdGVkX1+Rhouu1RaEiXf9JxKWlZBdZl/QZtT35nAJLPUhusz4QLD9z6mEOE8p";
-export const GUPIT = "LGV-THEORY";
 export const BANNER_AD_ID = "ca-app-pub-9082814869788754/4728841710";
 export const INTERSTITIAL_AD_ID = "ca-app-pub-9082814869788754/2841044979";
 export const REWARD_AD_ID = "ca-app-pub-9082814869788754/1336391610";
