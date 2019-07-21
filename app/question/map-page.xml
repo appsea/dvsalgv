@@ -2,7 +2,7 @@
         class="page"
         loaded="onPageLoaded"
         navigatingTo="onNavigatingTo"
-        xmlns:gv="shared/nativescript-grid-view"
+        xmlns:gv="~/shared/nativescript-grid-view"
         xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
