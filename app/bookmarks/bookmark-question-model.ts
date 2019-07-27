@@ -68,7 +68,6 @@ export class BookmarkQuestionModel extends Observable {
 
     showDrawer() {
         QuestionViewModel.showDrawer();
-        AdService.getInstance().hideAd();
     }
 
     previous(): void {
