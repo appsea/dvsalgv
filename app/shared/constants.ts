@@ -1,7 +1,7 @@
 export const BANNER_AD_ID = "ca-app-pub-9082814869788754/4728841710";
 export const INTERSTITIAL_AD_ID = "ca-app-pub-9082814869788754/2841044979";
 export const REWARD_AD_ID = "ca-app-pub-9082814869788754/1336391610";
-export const TOTAL_QUESTIONS = 734;
+export const TOTAL_QUESTIONS = 914;
 export const PREMIUM = "PREMIUM";
 export const WRONG_QUESTION = "WRONG_QUESTION";
 export const FLAG_QUESTION = "FLAG_QUESTION";
