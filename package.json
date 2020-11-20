@@ -19,9 +19,9 @@
     "android": "tsc && tns run android"
   },
   "dependencies": {
+    "@nstudio/nativescript-cardview": "^2.0.1",
     "crypto-js": "^3.1.9-1",
     "nativescript-appversion": "^1.4.2",
-    "nativescript-cardview": "^3.2.0",
     "nativescript-purchase": "^2.0.13",
     "nativescript-screen-orientation": "^2.0.0",
     "nativescript-social-share": "^1.5.2",
@@ -29,9 +29,9 @@
     "nativescript-toast": "^2.0.0",
     "nativescript-ui-chart": "5.0.0",
     "nativescript-ui-sidedrawer": "7.0.0",
+    "nativescript-unit-test-runner": "0.7.0",
     "rxjs": "~6.5.0",
-    "tns-core-modules": "6.0.1",
-    "nativescript-unit-test-runner": "0.7.0"
+    "tns-core-modules": "6.0.1"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",

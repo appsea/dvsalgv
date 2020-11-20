@@ -7,8 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      #- image: circleci/openjdk:8u181-jdk-node-browsers
-      - image: circleci/android:api-28-node8-alpha
+      - image: circleci/android:api-30-node
 
       #- image: circleci/android:api-25-alpha
       # Specify service dependencies here if necessary
@@ -17,7 +16,7 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     environment:
-      JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+      #JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
       #ANDROID_HOME: /usr/lib/google-cloud-sdk
       JVM_OPTS: -Xmx4096m
       GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx4096m" -XX:+HeapDumpOnOutOfMemoryError -Dorg.gradle.daemon=false'
@@ -27,6 +26,8 @@ jobs:
     steps:
       - checkout
 
+      - run: echo $ANDROID_HOME
+      - run: echo $JAVA_HOME
       - run: npm install
 
       # - run: bash ./.circleci/download.sh
@@ -39,5 +40,5 @@ jobs:
       - run: echo yes | tns setup
       - run: echo yes | tns cloud setup
       - run: tns doctor
-      - run: echo -n $'\031' | tns build android --env.snapshot --env.monica=$MONICA --env.gupit=$GUPIT --release --aab --key-store-path $KEYSTORE --key-store-password $KEYSTORE_PASSWORD --key-store-alias sasquiz --key-store-alias-password $KEYSTORE_PASSWORD --copy-to lgv.aab
+      - run: echo -n $'\031' | tns build android --env.monica=$MONICA --env.gupit=$GUPIT --release --aab --key-store-path $KEYSTORE --key-store-password $KEYSTORE_PASSWORD --key-store-alias sasquiz --key-store-alias-password $KEYSTORE_PASSWORD --copy-to lgv.aab
       - run: java -jar release-manager-1.1.jar -key "key.json" -file "lgv.aab" -track "internal" -name "UK LGV Theory" -notes "Thank you for using UK LGV Theory. We keep bringing new updates to make user experience better. This times it is loads of improvements. We strongly recommend you to keep UK LGV Theory updated. We love to hear back to make UK LGV Theory better than what it is today so please share feedback on exuberant.avatar@gmail.com and rate us on play store. Thank you again!!!" -packageName=exuberant.dvsa.lttk
